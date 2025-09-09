@@ -37,7 +37,7 @@ namespace lab1_kostenko
                                 }
                             }
                         }
-                        result.Text="Кількість зірочок після пробілу: " + starcount;
+                        result.Text="ГЉВіГ«ГјГЄВіГ±ГІГј Г§ВіГ°Г®Г·Г®ГЄ ГЇВіГ±Г«Гї ГЇГ°Г®ГЎВіГ«Гі: " + starcount;
                         break;
 
                     case 2:
@@ -47,10 +47,10 @@ namespace lab1_kostenko
 
                         string newryadok;
 
-                        if (ryadok1.IndexOf(litera) != -1) // якщо знайдено хоча б одне входження
+                        if (ryadok1.IndexOf(litera) != -1) 
                         {
                             newryadok = ryadok1.Replace(litera, "???");
-                            result.Text=("Результат: " + newryadok);
+                            result.Text=("ГђГҐГ§ГіГ«ГјГІГ ГІ: " + newryadok);
                         }
                             break;
 
@@ -70,7 +70,7 @@ namespace lab1_kostenko
                         }
 
                         string resultat = string.Join(" ", words);
-                        result.Text = ("Результат: " + resultat);
+                        result.Text = ("ГђГҐГ§ГіГ«ГјГІГ ГІ: " + resultat);
                         break;
                     case 4:
                         string sentence1 = danie.Text;
@@ -89,13 +89,13 @@ namespace lab1_kostenko
                             shifted[index++] = words1[i];
                         }
                         string resultat1 = string.Join(" ", shifted);
-                        result.Text=("Результат: " + resultat1);
+                        result.Text=("ГђГҐГ§ГіГ«ГјГІГ ГІ: " + resultat1);
                         break;
                 }
             }
             else
             {
-                MessageBox.Show("Будь ласка, введіть число!");
+                MessageBox.Show("ГЃГіГ¤Гј Г«Г Г±ГЄГ , ГўГўГҐГ¤ВіГІГј Г·ГЁГ±Г«Г®!");
             }
         }
 
